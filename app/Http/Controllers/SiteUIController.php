@@ -18,7 +18,7 @@ class SiteUIController extends Controller
         // return view('index')
         //                     ->with('gallery', Gallery::all())
         //                     ->with('settings' , Setting::all());
-        //         $settings = Setting::all();
+        $settings = Setting::all();
         $gallery = Gallery::all();
         $profile = Profile::first();
         $prices = Price::all();
