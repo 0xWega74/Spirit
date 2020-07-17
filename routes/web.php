@@ -112,5 +112,12 @@ Route::group(['prefix' => 'admin', 'middleware'=> 'auth'], function () {
     Route::post('/message/store', 'MessagesController@store')->name('message.store');
 
 
+    Route::get('/', function()
+{
+    return User::all();
+});
+
+
+
     // route for comments
     // Route::post('/comments/store', 'CommentController@store')->name('comments.store');
